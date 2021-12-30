@@ -1,0 +1,1496 @@
+ * Serving Flask app 'main' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+[nltk_data] Downloading package stopwords to /home/ubuntu/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.31.24.115:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+[nltk_data] Downloading package stopwords to /home/ubuntu/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+ * Debugger is active!
+ * Debugger PIN: 119-182-537
+74.77.118.22 - - [12/Dec/2021 21:02:10] "GET / HTTP/1.1" 200 -
+74.77.118.22 - - [12/Dec/2021 21:02:10] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:10] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:10] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:10] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:10] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:10] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:10] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:10] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:10] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:10] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:11] "GET /static/images/UB.png HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:11] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:11] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:15] "GET / HTTP/1.1" 200 -
+74.77.118.22 - - [12/Dec/2021 21:02:15] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:15] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:15] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:15] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:15] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:15] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:15] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:15] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:15] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:15] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:15] "GET /static/images/UB.png HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:16] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:16] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:17] "GET / HTTP/1.1" 200 -
+74.77.118.22 - - [12/Dec/2021 21:02:17] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:17] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:17] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:17] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:17] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:17] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:17] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:17] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:17] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:17] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:17] "GET /static/images/UB.png HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:17] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:02:17] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+172.101.101.17 - - [12/Dec/2021 21:02:20] "GET / HTTP/1.1" 200 -
+172.101.101.17 - - [12/Dec/2021 21:02:20] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+172.101.101.17 - - [12/Dec/2021 21:02:20] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+172.101.101.17 - - [12/Dec/2021 21:02:20] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+172.101.101.17 - - [12/Dec/2021 21:02:20] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+172.101.101.17 - - [12/Dec/2021 21:02:20] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+172.101.101.17 - - [12/Dec/2021 21:02:21] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+172.101.101.17 - - [12/Dec/2021 21:02:21] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+172.101.101.17 - - [12/Dec/2021 21:02:21] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+172.101.101.17 - - [12/Dec/2021 21:02:21] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 200 -
+172.101.101.17 - - [12/Dec/2021 21:02:21] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 200 -
+172.101.101.17 - - [12/Dec/2021 21:02:21] "GET /static/images/UB.png HTTP/1.1" 200 -
+172.101.101.17 - - [12/Dec/2021 21:02:21] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+172.101.101.17 - - [12/Dec/2021 21:02:21] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 200 -
+74.77.118.22 - - [12/Dec/2021 21:02:28] "POST /search HTTP/1.1" 200 -
+74.77.118.22 - - [12/Dec/2021 21:02:42] "GET /api/get-chart-result?searchkey=undefined HTTP/1.1" 200 -
+74.77.118.22 - - [12/Dec/2021 21:02:42] "GET /api/get-chart-result1?searchkey=undefined HTTP/1.1" 200 -
+74.77.118.22 - - [12/Dec/2021 21:02:43] "GET /api/get-chart-result2?searchkey=undefined HTTP/1.1" 200 -
+74.77.118.22 - - [12/Dec/2021 21:03:00] "POST /api/get-news-result HTTP/1.1" 200 -
+74.77.118.22 - - [12/Dec/2021 21:03:43] "POST /api/get-general-result HTTP/1.1" 200 -
+74.77.118.22 - - [12/Dec/2021 21:07:31] "GET / HTTP/1.1" 200 -
+74.77.118.22 - - [12/Dec/2021 21:07:31] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:07:31] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:07:31] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:07:31] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:07:31] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:07:31] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:07:31] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:07:31] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:07:31] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:07:31] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:07:32] "GET /static/images/UB.png HTTP/1.1" 304 -
+74.77.118.22 - - [12/Dec/2021 21:07:34] "POST /search HTTP/1.1" 200 -
+74.77.118.22 - - [12/Dec/2021 21:07:38] "GET /api/get-chart-result?searchkey=covid HTTP/1.1" 200 -
+74.77.118.22 - - [12/Dec/2021 21:07:38] "GET /api/get-chart-result1?searchkey=covid HTTP/1.1" 200 -
+74.77.118.22 - - [12/Dec/2021 21:07:38] "GET /api/get-chart-result2?searchkey=covid HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:07:45] "GET / HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:07:45] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:07:45] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:07:45] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:07:45] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:07:45] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:07:45] "GET /static/styles/assets/css/master.css HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:07:45] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:07:45] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:07:45] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:07:45] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:07:46] "GET /static/images/UB.png HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:07:46] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:07:46] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:07:47] "GET /favicon.ico HTTP/1.1" 404 -
+71.186.151.192 - - [12/Dec/2021 21:07:55] "POST /search HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:08:04] "POST /search HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:08:14] "POST /search HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:08:19] "POST /api/get-news-result HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:08:22] "GET / HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:08:22] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:08:22] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:08:22] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:08:22] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:08:22] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:08:22] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:08:22] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:08:22] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:08:23] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:08:23] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:08:23] "GET /static/images/UB.png HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:08:23] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:08:23] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:08:24] "GET / HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:08:24] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:08:24] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:08:24] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:08:24] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:08:24] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:08:24] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:08:24] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:08:24] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:08:24] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:08:24] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:08:24] "GET /static/images/UB.png HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:08:24] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:08:24] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:08:31] "POST /search HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:08:58] "POST /api/get-news-result HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:09:10] "POST /api/get-general-result HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:09:17] "GET /api/get-chart-result?searchkey=covid HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:09:17] "GET /api/get-chart-result1?searchkey=covid HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:09:18] "GET /api/get-chart-result2?searchkey=covid HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:09:58] "GET / HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:09:58] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:09:58] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:09:58] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:09:58] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:09:58] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:09:58] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:09:58] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:09:58] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:09:58] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:09:58] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:09:58] "GET /static/images/UB.png HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:09:58] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:09:58] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:10:15] "POST /search HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:10:53] "GET / HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:10:53] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:10:53] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:10:53] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:10:53] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:10:53] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:10:53] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:10:53] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:10:53] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:10:53] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:10:53] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:10:53] "GET /static/images/UB.png HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:10:53] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:10:53] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:11:02] "POST /search HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:11:18] "POST /api/get-news-result HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:11:19] "POST /api/get-general-result HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:11:22] "GET /api/get-chart-result?searchkey=undefined HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:11:22] "GET /api/get-chart-result1?searchkey=undefined HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:11:22] "GET /api/get-chart-result2?searchkey=undefined HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:12:01] "GET / HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 21:12:02] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:12:02] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:12:02] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:12:02] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:12:02] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:12:02] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:12:02] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:12:02] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:12:02] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:12:02] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:12:02] "GET /static/images/UB.png HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:12:02] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 21:12:02] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+104.28.133.61 - - [12/Dec/2021 22:23:31] "GET / HTTP/1.1" 200 -
+104.28.133.61 - - [12/Dec/2021 22:23:31] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 200 -
+104.28.133.61 - - [12/Dec/2021 22:23:31] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 200 -
+104.28.133.61 - - [12/Dec/2021 22:23:31] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+104.28.133.61 - - [12/Dec/2021 22:23:31] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 200 -
+104.28.133.61 - - [12/Dec/2021 22:23:31] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 200 -
+104.28.133.61 - - [12/Dec/2021 22:23:31] "GET /static/styles/assets/css/master.css HTTP/1.1" 200 -
+104.28.133.61 - - [12/Dec/2021 22:23:31] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+104.28.133.61 - - [12/Dec/2021 22:23:31] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 200 -
+104.28.133.61 - - [12/Dec/2021 22:23:32] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 200 -
+104.28.133.61 - - [12/Dec/2021 22:23:32] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 200 -
+104.28.133.61 - - [12/Dec/2021 22:23:32] "GET /static/images/UB.png HTTP/1.1" 200 -
+104.28.133.61 - - [12/Dec/2021 22:23:33] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+104.28.133.61 - - [12/Dec/2021 22:23:33] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 200 -
+104.28.133.61 - - [12/Dec/2021 22:23:33] "GET /favicon.ico HTTP/1.1" 404 -
+104.28.133.61 - - [12/Dec/2021 22:23:39] "POST /search HTTP/1.1" 200 -
+104.28.133.61 - - [12/Dec/2021 22:23:52] "POST /api/get-news-result HTTP/1.1" 200 -
+pfizer%20vaccin%20in%20us
+http://3.17.16.7:8983/solr/Project4/select?q=tweet_text:*pfizer%20vaccin%20in%20us*&fl=*&wt=json&indent=true&rows=1000
+es
+   country  ...                                           positive
+51     USA  ...           Are Vaccines Safe For African Americans?
+52     USA  ...  Yet big Pharma, yall at the cdc, and this gove...
+53     USA  ...  These boosters will protect against the variou...
+54  Mexico  ...  Urge ampliar la vacunacin a menores de a aos, ...
+55     USA  ...              ..Calendar Reminder is Set for mine..
+56  Mexico  ...                      Ya lleg el pago migratorio...
+
+[6 rows x 21 columns]
+Index(['SSalud_mx'], dtype='object', name='poi_name')
+[{'poi_name': 'SSalud_mx', 'count': -0.410835}]
+    country  replied_to_tweet_id  ... negative positive
+40   Mexico  1465727334040826112  ...      NaN      NaN
+41   Mexico  1465679848324620032  ...      NaN      NaN
+42   Mexico  1465415021719027968  ...      NaN      NaN
+110  Mexico  1464232472472867072  ...      NaN      NaN
+111  Mexico  1463673792010625024  ...      NaN      NaN
+112  Mexico  1463254015429562112  ...      NaN      NaN
+113  Mexico  1463311407689068032  ...      NaN      NaN
+114  Mexico  1461861954092338944  ...      NaN      NaN
+115  Mexico  1461708120795726080  ...      NaN      NaN
+116  Mexico  1464288472219348992  ...      NaN      NaN
+149  Mexico  1466803245104336896  ...      NaN      NaN
+150  Mexico  1466803245104336896  ...      NaN      NaN
+151  Mexico  1466572896478715904  ...      NaN      NaN
+152  Mexico  1465848122089910016  ...      NaN      NaN
+166  Mexico  1466500926924103936  ...      NaN      NaN
+167  Mexico  1465507720061193984  ...      NaN      NaN
+
+[16 rows x 21 columns]
+covid
+http://3.17.16.7:8983/solr/Project4/select?q=tweet_text:*covid*&fl=*&wt=json&indent=true&rows=1000
+    country  ...                                           positive
+495     USA  ...  Please approve CanSino vaccine Millions are de...
+496     USA  ...       What about kids to ? They should get it too.
+497     USA  ...                                        is The Best
+498     USA  ...  The reviewed covid from and published amazing ...
+499     USA  ...  You MUST be held accountable for CRIMES AGAINS...
+..      ...  ...                                                ...
+612   India  ...                        World's superb murder plan!
+613   India  ...                                        , , COVID |
+614     USA  ...  We, Canada, has the people to look after, that...
+615     USA  ...                       , is a member of this group.
+616   India  ...  our H'blePMNMJi who by initiating innovative r...
+
+[122 rows x 21 columns]
+Index(['CDCDirector', 'CDCgov', 'DrTedros', 'HLGatell', 'JoeBiden',
+       'MoHFW_INDIA', 'RahulGandhi', 'SSalud_mx', 'mansukhmandviya',
+       'narendramodi'],
+      dtype='object', name='poi_name')
+[{'poi_name': 'CDCDirector', 'count': -0.07503083333333334}, {'poi_name': 'CDCgov', 'count': -0.32273073170731703}, {'poi_name': 'DrTedros', 'count': -0.055021}, {'poi_name': 'HLGatell', 'count': -0.128875}, {'poi_name': 'JoeBiden', 'count': -0.46557}, {'poi_name': 'MoHFW_INDIA', 'count': -0.21408000000000002}, {'poi_name': 'RahulGandhi', 'count': -0.23391}, {'poi_name': 'SSalud_mx', 'count': -0.23843000000000006}, {'poi_name': 'mansukhmandviya', 'count': 0.14010833333333333}, {'poi_name': 'narendramodi', 'count': 0.11185500000000001}]
+buffalo
+http://3.17.16.7:8983/solr/Project4/select?q=tweet_text:*buffalo*&fl=*&wt=json&indent=true&rows=1000
+pandem
+http://3.17.16.7:8983/solr/Project4/select?q=tweet_text:*pandem*&fl=*&wt=json&indent=true&rows=1000
+covid
+http://3.17.16.7:8983/solr/Project4/select?q=tweet_text:*covid*&fl=*&wt=json&indent=true&rows=1000
+covid
+http://3.17.16.7:8983/solr/Project4/select?q=tweet_text:*covid*&fl=*&wt=json&indent=true&rows=1000
+    country  replied_to_tweet_id  ... negative positive
+0     India  1464499391709031936  ...      NaN      NaN
+1     India  1464499391709031936  ...      NaN      NaN
+2     India  1464499391709031936  ...      NaN      NaN
+3     India  1464499391709031936  ...      NaN      NaN
+4     India  1464499391709031936  ...      NaN      NaN
+..      ...                  ...  ...      ...      ...
+423  Mexico  1466217724963705088  ...      NaN      NaN
+424  Mexico  1466217724963705088  ...      NaN      NaN
+425  Mexico  1466142697895378944  ...      NaN      NaN
+426     USA  1466445280300175104  ...      NaN      NaN
+427     USA  1465381554138631936  ...      NaN      NaN
+
+[322 rows x 21 columns]
+    country  ...                                           positive
+495     USA  ...  Please approve CanSino vaccine Millions are de...
+496     USA  ...       What about kids to ? They should get it too.
+497     USA  ...                                        is The Best
+498     USA  ...  The reviewed covid from and published amazing ...
+499     USA  ...  You MUST be held accountable for CRIMES AGAINS...
+..      ...  ...                                                ...
+612   India  ...                        World's superb murder plan!
+613   India  ...                                        , , COVID |
+614     USA  ...  We, Canada, has the people to look after, that...
+615     USA  ...                       , is a member of this group.
+616   India  ...  our H'blePMNMJi who by initiating innovative r...
+
+[122 rows x 21 columns]
+Index(['CDCDirector', 'CDCgov', 'DrTedros', 'HLGatell', 'JoeBiden',
+       'MoHFW_INDIA', 'RahulGandhi', 'SSalud_mx', 'mansukhmandviya',
+       'narendramodi'],
+      dtype='object', name='poi_name')
+[{'poi_name': 'CDCDirector', 'count': -0.07503083333333334}, {'poi_name': 'CDCgov', 'count': -0.32273073170731703}, {'poi_name': 'DrTedros', 'count': -0.055021}, {'poi_name': 'HLGatell', 'count': -0.128875}, {'poi_name': 'JoeBiden', 'count': -0.46557}, {'poi_name': 'MoHFW_INDIA', 'count': -0.21408000000000002}, {'poi_name': 'RahulGandhi', 'count': -0.23391}, {'poi_name': 'SSalud_mx', 'count': -0.23843000000000006}, {'poi_name': 'mansukhmandviya', 'count': 0.14010833333333333}, {'poi_name': 'narendramodi', 'count': 0.11185500000000001}]
+pandem
+http://3.17.16.7:8983/solr/Project4/select?q=tweet_text:*pandem*&fl=*&wt=json&indent=true&rows=1000
+en
+%E0%A4%9F%E0%A5%80%E0%A4%95%E0%A4%BE
+http://3.17.16.7:8983/solr/Project4/select?q=tweet_text:*%E0%A4%9F%E0%A5%80%E0%A4%95%E0%A4%BE*&fl=*&wt=json&indent=true&rows=1000
+hi
+Empty DataFrame
+Columns: [poi_name, verified, country, tweet_text, tweet_lang, mentions, tweet_date, tweet_emoticons, tweet_urls, hashtags, sentiment, max_sentiment, min_sentiment, negative, positive, total_replies_per_poi, words, type, replied_to_tweet_id, replied_to_user_id]
+Index: []
+           poi_name  verified  ... replied_to_tweet_id replied_to_user_id
+0       MoHFW_INDIA      True  ...                   0                  0
+1   mansukhmandviya      True  ...                   0                  0
+2   mansukhmandviya      True  ...                   0                  0
+3   mansukhmandviya      True  ...                   0                  0
+4       MoHFW_INDIA      True  ...                   0                  0
+5   mansukhmandviya      True  ...                   0                  0
+6       MoHFW_INDIA      True  ...                   0                  0
+7       MoHFW_INDIA      True  ...                   0                  0
+8       MoHFW_INDIA      True  ...                   0                  0
+9   mansukhmandviya      True  ...                   0                  0
+10      MoHFW_INDIA      True  ...                   0                  0
+11  mansukhmandviya      True  ...                   0                  0
+12  mansukhmandviya      True  ...                   0                  0
+
+[13 rows x 20 columns]
+Index(['MoHFW_INDIA', 'mansukhmandviya'], dtype='object', name='poi_name')
+[{'poi_name': 'MoHFW_INDIA', 'count': -0.09148166666666667}, {'poi_name': 'mansukhmandviya', 'count': 0.19796428571428573}]
+covid
+http://3.17.16.7:8983/solr/Project4/select?q=tweet_text:*covid*&fl=*&wt=json&indent=true&rows=1000
+    country  ...                                           positive
+495     USA  ...  Please approve CanSino vaccine Millions are de...
+496     USA  ...       What about kids to ? They should get it too.
+497     USA  ...                                        is The Best
+498     USA  ...  The reviewed covid from and published amazing ...
+499     USA  ...  You MUST be held accountable for CRIMES AGAINS...
+..      ...  ...                                                ...
+612   India  ...                        World's superb murder plan!
+613   India  ...                                        , , COVID |
+614     USA  ...  We, Canada, has the people to look after, that...
+615     USA  ...                       , is a member of this group.
+616   India  ...  our H'blePMNMJi who by initiating innovative r...
+
+[122 rows x 21 columns]104.28.133.61 - - [12/Dec/2021 22:23:55] "GET /api/get-chart-result?searchkey=Covid HTTP/1.1" 200 -
+104.28.133.61 - - [12/Dec/2021 22:23:55] "GET /api/get-chart-result1?searchkey=Covid HTTP/1.1" 200 -
+104.28.133.61 - - [12/Dec/2021 22:23:55] "GET /api/get-chart-result2?searchkey=Covid HTTP/1.1" 200 -
+104.28.133.61 - - [12/Dec/2021 22:24:25] "GET / HTTP/1.1" 200 -
+104.28.133.61 - - [12/Dec/2021 22:24:25] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [12/Dec/2021 22:24:25] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [12/Dec/2021 22:24:25] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [12/Dec/2021 22:24:25] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [12/Dec/2021 22:24:25] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [12/Dec/2021 22:24:25] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+104.28.133.61 - - [12/Dec/2021 22:24:25] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [12/Dec/2021 22:24:25] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+104.28.133.61 - - [12/Dec/2021 22:24:25] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [12/Dec/2021 22:24:25] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+104.28.133.61 - - [12/Dec/2021 22:24:25] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [12/Dec/2021 22:24:25] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [12/Dec/2021 22:24:25] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [12/Dec/2021 22:24:25] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [12/Dec/2021 22:24:25] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [12/Dec/2021 22:24:25] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+104.28.133.61 - - [12/Dec/2021 22:24:25] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [12/Dec/2021 22:24:25] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [12/Dec/2021 22:24:25] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+104.28.133.61 - - [12/Dec/2021 22:24:25] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+104.28.133.61 - - [12/Dec/2021 22:24:25] "GET /static/images/UB.png HTTP/1.1" 304 -
+104.28.133.61 - - [12/Dec/2021 22:24:25] "GET /static/images/UB.png HTTP/1.1" 304 -
+104.28.133.61 - - [12/Dec/2021 22:24:25] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+104.28.133.61 - - [12/Dec/2021 22:24:25] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+104.28.133.61 - - [12/Dec/2021 22:24:26] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+104.28.133.61 - - [12/Dec/2021 22:24:26] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 23:40:39] "GET / HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 23:40:39] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 23:40:39] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 23:40:39] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 23:40:39] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 23:40:39] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 23:40:39] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 23:40:39] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 23:40:39] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 23:40:39] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 23:40:39] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 23:40:39] "GET /static/images/UB.png HTTP/1.1" 200 -
+71.186.151.192 - - [12/Dec/2021 23:40:39] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+71.186.151.192 - - [12/Dec/2021 23:40:39] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+71.186.151.192 - - [13/Dec/2021 01:10:02] "GET / HTTP/1.1" 200 -
+71.186.151.192 - - [13/Dec/2021 01:10:02] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 200 -
+71.186.151.192 - - [13/Dec/2021 01:10:02] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+71.186.151.192 - - [13/Dec/2021 01:10:02] "GET /static/styles/assets/css/master.css HTTP/1.1" 200 -
+71.186.151.192 - - [13/Dec/2021 01:10:02] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 200 -
+71.186.151.192 - - [13/Dec/2021 01:10:02] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+71.186.151.192 - - [13/Dec/2021 01:10:02] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+71.186.151.192 - - [13/Dec/2021 01:10:02] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 200 -
+71.186.151.192 - - [13/Dec/2021 01:10:02] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 200 -
+71.186.151.192 - - [13/Dec/2021 01:10:02] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 200 -
+71.186.151.192 - - [13/Dec/2021 01:10:02] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 200 -
+71.186.151.192 - - [13/Dec/2021 01:10:02] "GET /static/images/UB.png HTTP/1.1" 304 -
+71.186.151.192 - - [13/Dec/2021 01:10:03] "GET / HTTP/1.1" 200 -
+71.186.151.192 - - [13/Dec/2021 01:10:03] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [13/Dec/2021 01:10:03] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [13/Dec/2021 01:10:03] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+71.186.151.192 - - [13/Dec/2021 01:10:03] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [13/Dec/2021 01:10:03] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [13/Dec/2021 01:10:03] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+71.186.151.192 - - [13/Dec/2021 01:10:03] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [13/Dec/2021 01:10:03] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+71.186.151.192 - - [13/Dec/2021 01:10:03] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+71.186.151.192 - - [13/Dec/2021 01:10:03] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+71.186.151.192 - - [13/Dec/2021 01:10:03] "GET /static/images/UB.png HTTP/1.1" 304 -
+71.186.151.192 - - [13/Dec/2021 01:10:21] "GET / HTTP/1.1" 200 -
+71.186.151.192 - - [13/Dec/2021 01:10:21] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [13/Dec/2021 01:10:21] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [13/Dec/2021 01:10:21] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+71.186.151.192 - - [13/Dec/2021 01:10:21] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [13/Dec/2021 01:10:21] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+71.186.151.192 - - [13/Dec/2021 01:10:21] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [13/Dec/2021 01:10:21] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+71.186.151.192 - - [13/Dec/2021 01:10:21] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+71.186.151.192 - - [13/Dec/2021 01:10:21] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+71.186.151.192 - - [13/Dec/2021 01:10:21] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+71.186.151.192 - - [13/Dec/2021 01:10:21] "GET /static/images/UB.png HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:11:13] "GET / HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:11:13] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:11:13] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:11:13] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:11:13] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:11:13] "GET /static/styles/assets/css/master.css HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:11:13] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:11:13] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:11:13] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:11:13] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:11:13] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:11:13] "GET /static/images/UB.png HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:11:14] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:11:14] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:11:15] "GET /favicon.ico HTTP/1.1" 404 -
+192.241.212.101 - - [13/Dec/2021 01:16:15] "GET / HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:21:34] "POST /search HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:23:03] "POST /api/get-news-result HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:23:51] "POST /api/get-general-result HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:24:26] "GET /api/get-chart-result?searchkey=covid HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:24:26] "GET /api/get-chart-result1?searchkey=covid HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:24:26] "GET /api/get-chart-result2?searchkey=covid HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:25:33] "GET / HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:25:33] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:25:33] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:25:33] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:25:33] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:25:33] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:25:33] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:25:33] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:25:33] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:25:33] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:25:33] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:25:33] "GET /static/images/UB.png HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:25:34] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:25:34] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:25:54] "POST /search HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:26:13] "POST /api/get-news-result HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:26:30] "POST /api/get-general-result HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:26:48] "GET /api/get-chart-result?searchkey=undefined HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:26:48] "GET /api/get-chart-result1?searchkey=undefined HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:26:49] "GET /api/get-chart-result2?searchkey=undefined HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:27:19] "GET / HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:27:19] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:27:19] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:27:19] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:27:19] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:27:19] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:27:19] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:27:19] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:27:19] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:27:19] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:27:19] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:27:19] "GET /static/images/UB.png HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:27:20] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:27:20] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:27:46] "POST /search HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:28:00] "POST /api/get-news-result HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:28:13] "POST /api/get-general-result HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:28:21] "GET /api/get-chart-result?searchkey=कोरोना HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:28:21] "GET /api/get-chart-result1?searchkey=कोरोना HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:28:22] "GET /api/get-chart-result2?searchkey=कोरोना HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:28:39] "GET / HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:28:39] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:28:39] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:28:39] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:28:39] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:28:39] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:28:39] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:28:39] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:28:39] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:28:39] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:28:39] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:28:39] "GET /static/images/UB.png HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:28:39] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:28:39] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:28:46] "POST /search HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:29:14] "GET /api/get-chart-result?searchkey=pfizer%20vaccine%20in%20usa HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:29:14] "GET /api/get-chart-result1?searchkey=pfizer%20vaccine%20in%20usa HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:29:14] "GET /api/get-chart-result2?searchkey=pfizer%20vaccine%20in%20usa HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:29:57] "GET / HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:29:57] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:29:57] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:29:57] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:29:57] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:29:57] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:29:57] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:29:57] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:29:57] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:29:57] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:29:57] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:29:57] "GET /static/images/UB.png HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:29:58] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:29:58] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:30:10] "POST /search HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:30:21] "GET /api/get-chart-result?searchkey=vacuna HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:30:21] "GET /api/get-chart-result1?searchkey=vacuna HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:30:21] "GET /api/get-chart-result2?searchkey=vacuna HTTP/1.1" 200 -
+
+Index(['CDCDirector', 'CDCgov', 'DrTedros', 'HLGatell', 'JoeBiden',
+       'MoHFW_INDIA', 'RahulGandhi', 'SSalud_mx', 'mansukhmandviya',
+       'narendramodi'],
+      dtype='object', name='poi_name')
+[{'poi_name': 'CDCDirector', 'count': -0.07503083333333334}, {'poi_name': 'CDCgov', 'count': -0.32273073170731703}, {'poi_name': 'DrTedros', 'count': -0.055021}, {'poi_name': 'HLGatell', 'count': -0.128875}, {'poi_name': 'JoeBiden', 'count': -0.46557}, {'poi_name': 'MoHFW_INDIA', 'count': -0.21408000000000002}, {'poi_name': 'RahulGandhi', 'count': -0.23391}, {'poi_name': 'SSalud_mx', 'count': -0.23843000000000006}, {'poi_name': 'mansukhmandviya', 'count': 0.14010833333333333}, {'poi_name': 'narendramodi', 'count': 0.11185500000000001}]
+covid
+http://3.17.16.7:8983/solr/Project4/select?q=tweet_text:*covid*&fl=*&wt=json&indent=true&rows=1000
+    country  replied_to_tweet_id  ... negative positive
+0     India  1464499391709031936  ...      NaN      NaN
+1     India  1464499391709031936  ...      NaN      NaN
+2     India  1464499391709031936  ...      NaN      NaN
+3     India  1464499391709031936  ...      NaN      NaN
+4     India  1464499391709031936  ...      NaN      NaN
+..      ...                  ...  ...      ...      ...
+423  Mexico  1466217724963705088  ...      NaN      NaN
+424  Mexico  1466217724963705088  ...      NaN      NaN
+425  Mexico  1466142697895378944  ...      NaN      NaN
+426     USA  1466445280300175104  ...      NaN      NaN
+427     USA  1465381554138631936  ...      NaN      NaN
+
+[322 rows x 21 columns]
+    country  ...                                           positive
+495     USA  ...  Please approve CanSino vaccine Millions are de...
+496     USA  ...       What about kids to ? They should get it too.
+497     USA  ...                                        is The Best
+498     USA  ...  The reviewed covid from and published amazing ...
+499     USA  ...  You MUST be held accountable for CRIMES AGAINS...
+..      ...  ...                                                ...
+612   India  ...                        World's superb murder plan!
+613   India  ...                                        , , COVID |
+614     USA  ...  We, Canada, has the people to look after, that...
+615     USA  ...                       , is a member of this group.
+616   India  ...  our H'blePMNMJi who by initiating innovative r...
+
+[122 rows x 21 columns]
+Index(['CDCDirector', 'CDCgov', 'DrTedros', 'HLGatell', 'JoeBiden',
+       'MoHFW_INDIA', 'RahulGandhi', 'SSalud_mx', 'mansukhmandviya',
+       'narendramodi'],
+      dtype='object', name='poi_name')
+[{'poi_name': 'CDCDirector', 'count': -0.07503083333333334}, {'poi_name': 'CDCgov', 'count': -0.32273073170731703}, {'poi_name': 'DrTedros', 'count': -0.055021}, {'poi_name': 'HLGatell', 'count': -0.128875}, {'poi_name': 'JoeBiden', 'count': -0.46557}, {'poi_name': 'MoHFW_INDIA', 'count': -0.21408000000000002}, {'poi_name': 'RahulGandhi', 'count': -0.23391}, {'poi_name': 'SSalud_mx', 'count': -0.23843000000000006}, {'poi_name': 'mansukhmandviya', 'count': 0.14010833333333333}, {'poi_name': 'narendramodi', 'count': 0.11185500000000001}]
+covid
+http://3.17.16.7:8983/solr/Project4/select?q=tweet_text:*covid*&fl=*&wt=json&indent=true&rows=1000
+en
+CDCDirector
+    country  replied_to_tweet_id  ... negative positive
+0     India  1464499391709031936  ...      NaN      NaN
+1     India  1464499391709031936  ...      NaN      NaN
+2     India  1464499391709031936  ...      NaN      NaN
+3     India  1464499391709031936  ...      NaN      NaN
+4     India  1464499391709031936  ...      NaN      NaN
+..      ...                  ...  ...      ...      ...
+418     USA  1465769603733336064  ...      NaN      NaN
+419     USA  1465769603733336064  ...      NaN      NaN
+420     USA  1465769603733336064  ...      NaN      NaN
+426     USA  1466445280300175104  ...      NaN      NaN
+427     USA  1465381554138631936  ...      NaN      NaN
+
+[264 rows x 21 columns]
+    country  ...                                           positive
+495     USA  ...  Please approve CanSino vaccine Millions are de...
+496     USA  ...       What about kids to ? They should get it too.
+497     USA  ...                                        is The Best
+498     USA  ...  The reviewed covid from and published amazing ...
+499     USA  ...  You MUST be held accountable for CRIMES AGAINS...
+..      ...  ...                                                ...
+612   India  ...                        World's superb murder plan!
+613   India  ...                                        , , COVID |
+614     USA  ...  We, Canada, has the people to look after, that...
+615     USA  ...                       , is a member of this group.
+616   India  ...  our H'blePMNMJi who by initiating innovative r...
+
+[122 rows x 21 columns]
+Index(['CDCDirector'], dtype='object', name='poi_name')
+[{'poi_name': 'CDCDirector', 'count': -0.07503083333333334}]
+%E0%A4%95%E0%A5%8B%E0%A4%B0%E0%A5%8B%E0%A4%A8%E0%A4%BE
+http://3.17.16.7:8983/solr/Project4/select?q=tweet_text:*%E0%A4%95%E0%A5%8B%E0%A4%B0%E0%A5%8B%E0%A4%A8%E0%A4%BE*&fl=*&wt=json&indent=true&rows=1000
+Empty DataFrame
+Columns: [poi_name, verified, country, tweet_text, tweet_lang, mentions, tweet_date, tweet_emoticons, tweet_urls, hashtags, sentiment, max_sentiment, min_sentiment, negative, positive, total_replies_per_poi, words, type, replied_to_tweet_id, replied_to_user_id]
+Index: []
+          poi_name  verified  ... replied_to_tweet_id replied_to_user_id
+0  mansukhmandviya      True  ...                   0                  0
+1  mansukhmandviya      True  ...                   0                  0
+
+[2 rows x 20 columns]
+Index(['mansukhmandviya'], dtype='object', name='poi_name')
+[{'poi_name': 'mansukhmandviya', 'count': 0.17451}]
+pfizer%20vaccin%20in%20usa
+http://3.17.16.7:8983/solr/Project4/select?q=tweet_text:*pfizer%20vaccin%20in%20usa*&fl=*&wt=json&indent=true&rows=1000
+   country  ...                                           positive
+51     USA  ...           Are Vaccines Safe For African Americans?
+52     USA  ...  Yet big Pharma, yall at the cdc, and this gove...
+53     USA  ...  These boosters will protect against the variou...
+54  Mexico  ...  Urge ampliar la vacunacin a menores de a aos, ...
+55     USA  ...              ..Calendar Reminder is Set for mine..
+56  Mexico  ...                      Ya lleg el pago migratorio...
+
+[6 rows x 21 columns]
+Index(['CDCgov', 'SSalud_mx'], dtype='object', name='poi_name')
+[{'poi_name': 'CDCgov', 'count': -0.42354749999999997}, {'poi_name': 'SSalud_mx', 'count': -0.410835}]
+vacuna
+http://3.17.16.7:8983/solr/Project4/select?q=tweet_text:*vacuna*&fl=*&wt=json&indent=true&rows=1000
+    country  ...                                           positive
+199  Mexico  ...                           Excelente DrGatelSaludos
+200  Mexico  ...  En el registro para vacunacin contra COVID19 p...
+201  Mexico  ...  Desde julio met aclaracin de correccin de cert...
+202  Mexico  ...  En Minatitln, Veracruz, los funcionarios elect...
+203  Mexico  ...  Definitivamente hay que darles importancia a e...
+204  Mexico  ...                        Pues que vacunen a los nios
+205  Mexico  ...  Perfecto y para cuando TODOS los menores de ed...
+206  Mexico  ...  Urge ampliar la vacunacin a menores de a aos, ...
+207  Mexico  ...                          Atte. El doctor muerte...
+208  Mexico  ...  Enhorabuena para Mxico La T sigue avanzando en...
+209  Mexico  ...  VACUNA PARA TODOS LOS NIOS Y ADOLESCENTES. ES ...
+210  Mexico  ...                 La cara del piloto al leer esto...
+211  Mexico  ...  Gracias Dr. Gatell, por su excelente Campaa de...
+212  Mexico  ...                                          Excelente
+213  Mexico  ...  Es muy importante qe te realices la prueba de ...
+214  Mexico  ...  te puse muchos tweets diciendote que hay que a...
+215  Mexico  ...                      Ya lleg el pago migratorio...
+
+[17 rows x 21 columns]
+Index(['HLGatell', 'SSalud_mx'], dtype='object', name='poi_name')
+[{'poi_name': 'HLGatell', 'count': -0.07856857142857142}, {'poi_name': 'SSalud_mx', 'count': -0.186279}]
+    country  replied_to_tweet_id  ... negative positive
+0       USA  1463884934398066944  ...      NaN      NaN
+1       USA  1464323316878130944  ...      NaN      NaN
+58      USA  1463626957346778880  ...      NaN      NaN
+59      USA  1463626957346778880  ...      NaN      NaN
+60      USA  1463240451570508032  ...      NaN      NaN
+..      ...                  ...  ...      ...      ...
+995  Mexico  1466806566825316096  ...      NaN      NaN
+996  Mexico  1466723406825598976  ...      NaN      NaN
+997  Mexico  1466419382792462080  ...      NaN      NaN
+998  Mexico  1466723406825598976  ...      NaN      NaN
+999  Mexico  1466723406825598976  ...      NaN      NaN
+
+[651 rows x 21 columns]74.77.118.22 - - [13/Dec/2021 01:30:30] "POST /api/get-general-result HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:30:47] "GET / HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:30:47] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:30:47] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:30:47] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:30:47] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:30:47] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:30:47] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:30:47] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:30:47] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:30:47] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:30:47] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:30:47] "GET /static/images/UB.png HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:30:48] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:30:48] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:31:09] "POST /search HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:31:14] "GET /api/get-chart-result?searchkey=undefined HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/flask/app.py", line 2091, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/flask/app.py", line 2076, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/ubuntu/project4/main.py", line 178, in chart1
+    ind = poi.groupby('poi_name').describe().index
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/pandas/core/groupby/groupby.py", line 1634, in describe
+    return result.unstack()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/pandas/core/frame.py", line 7146, in unstack
+    return unstack(self, level, fill_value)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/pandas/core/reshape/reshape.py", line 420, in unstack
+    return obj.T.stack(dropna=False)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/pandas/core/frame.py", line 7005, in stack
+    return stack(self, level, dropna=dropna)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/pandas/core/reshape/reshape.py", line 522, in stack
+    dtype = dtypes[0]
+IndexError: list index out of range
+74.77.118.22 - - [13/Dec/2021 01:31:14] "GET /api/get-chart-result1?searchkey=undefined HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:31:14] "GET /api/get-chart-result2?searchkey=undefined HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:31:26] "POST /api/get-news-result HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:31:30] "POST /api/get-general-result HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:31:55] "GET / HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:31:55] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:31:55] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:31:55] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:31:55] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:31:55] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:31:55] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:31:55] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:31:55] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:31:55] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:31:55] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:31:55] "GET /static/images/UB.png HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:31:56] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:31:56] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:41:03] "POST /search HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:43:08] "GET / HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:43:08] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:43:08] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:43:08] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:43:08] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:43:08] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:43:08] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:43:08] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:43:08] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:43:08] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:43:08] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:43:08] "GET /static/images/UB.png HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:43:09] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:43:09] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:44:33] "POST /search HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:45:48] "POST /api/get-news-result HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:46:36] "POST /api/get-general-result HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:46:51] "GET /api/get-chart-result?searchkey=covid HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:46:51] "GET /api/get-chart-result1?searchkey=covid HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:46:52] "GET /api/get-chart-result2?searchkey=covid HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:47:44] "GET / HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:47:44] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:47:44] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:47:44] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:47:44] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:47:44] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:47:44] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:47:44] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:47:44] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:47:44] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:47:44] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:47:44] "GET /static/images/UB.png HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:47:44] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:47:44] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:47:51] "POST /search HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:47:59] "GET /api/get-chart-result?searchkey=vacuna HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:47:59] "GET /api/get-chart-result1?searchkey=vacuna HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:47:59] "GET /api/get-chart-result2?searchkey=vacuna HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:48:16] "POST /search HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:48:24] "GET / HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:48:24] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:48:24] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:48:24] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:48:24] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:48:24] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:48:25] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:48:25] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:48:25] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:48:25] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:48:25] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:48:25] "GET /static/images/UB.png HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:48:25] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:48:25] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:48:27] "POST /search HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:48:37] "GET /api/get-chart-result?searchkey=कोरोना HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:48:37] "GET /api/get-chart-result1?searchkey=कोरोना HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:48:37] "GET /api/get-chart-result2?searchkey=कोरोना HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:48:47] "GET / HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:48:48] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:48:48] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:48:48] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:48:48] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:48:48] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:48:48] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:48:48] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:48:48] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:48:48] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:48:48] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:48:48] "GET /static/images/UB.png HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:48:48] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:48:48] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:01] "POST /search HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:49:11] "POST /search HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:49:16] "GET / HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:49:16] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:16] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:16] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:16] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:16] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:16] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:16] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:16] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:16] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:16] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:16] "GET /static/images/UB.png HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:17] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:17] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:24] "POST /search HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:49:29] "GET / HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:49:29] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:29] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:29] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:29] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:29] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:29] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:29] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:29] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:29] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:29] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:29] "GET /static/images/UB.png HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:29] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:29] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:37] "POST /search HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:49:44] "GET / HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 01:49:44] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:45] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:45] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:45] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:45] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:45] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:45] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:45] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:45] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:45] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:45] "GET /static/images/UB.png HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:45] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 01:49:45] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+ * Detected change in '/home/ubuntu/project4/main.py', reloading
+
+covid
+http://3.17.16.7:8983/solr/Project4/select?q=tweet_text:*covid*&fl=*&wt=json&indent=true&rows=1000
+hi
+JoeBiden
+    country  ...                                           positive
+495     USA  ...  Please approve CanSino vaccine Millions are de...
+496     USA  ...       What about kids to ? They should get it too.
+497     USA  ...                                        is The Best
+498     USA  ...  The reviewed covid from and published amazing ...
+499     USA  ...  You MUST be held accountable for CRIMES AGAINS...
+..      ...  ...                                                ...
+612   India  ...                        World's superb murder plan!
+613   India  ...                                        , , COVID |
+614     USA  ...  We, Canada, has the people to look after, that...
+615     USA  ...                       , is a member of this group.
+616   India  ...  our H'blePMNMJi who by initiating innovative r...
+
+[122 rows x 21 columns]
+    country  replied_to_tweet_id  ... negative positive
+265   India  1462824925396233984  ...      NaN      NaN
+266   India  1462472305234173952  ...      NaN      NaN
+268   India  1463160546459590912  ...      NaN      NaN
+269   India  1463536109934153984  ...      NaN      NaN
+270   India  1463536335419941120  ...      NaN      NaN
+271   India  1463796599658716928  ...      NaN      NaN
+272   India  1464107873042984960  ...      NaN      NaN
+273   India  1464440599038231040  ...      NaN      NaN
+274   India  1464626371762606080  ...      NaN      NaN
+280   India  1464520190834609920  ...      NaN      NaN
+289   India  1464520190834609920  ...      NaN      NaN
+402   India  1466373818109231104  ...      NaN      NaN
+
+[12 rows x 21 columns]
+covid
+http://3.17.16.7:8983/solr/Project4/select?q=tweet_text:*covid*&fl=*&wt=json&indent=true&rows=1000
+covid
+http://3.17.16.7:8983/solr/Project4/select?q=tweet_text:*covid*&fl=*&wt=json&indent=true&rows=1000
+    country  replied_to_tweet_id  ... negative positive
+0     India  1464499391709031936  ...      NaN      NaN
+1     India  1464499391709031936  ...      NaN      NaN
+2     India  1464499391709031936  ...      NaN      NaN
+3     India  1464499391709031936  ...      NaN      NaN
+4     India  1464499391709031936  ...      NaN      NaN
+..      ...                  ...  ...      ...      ...
+423  Mexico  1466217724963705088  ...      NaN      NaN
+424  Mexico  1466217724963705088  ...      NaN      NaN
+425  Mexico  1466142697895378944  ...      NaN      NaN
+426     USA  1466445280300175104  ...      NaN      NaN
+427     USA  1465381554138631936  ...      NaN      NaN
+
+[322 rows x 21 columns]
+    country  ...                                           positive
+495     USA  ...  Please approve CanSino vaccine Millions are de...
+496     USA  ...       What about kids to ? They should get it too.
+497     USA  ...                                        is The Best
+498     USA  ...  The reviewed covid from and published amazing ...
+499     USA  ...  You MUST be held accountable for CRIMES AGAINS...
+..      ...  ...                                                ...
+612   India  ...                        World's superb murder plan!
+613   India  ...                                        , , COVID |
+614     USA  ...  We, Canada, has the people to look after, that...
+615     USA  ...                       , is a member of this group.
+616   India  ...  our H'blePMNMJi who by initiating innovative r...
+
+[122 rows x 21 columns]
+Index(['CDCDirector', 'CDCgov', 'DrTedros', 'HLGatell', 'JoeBiden',
+       'MoHFW_INDIA', 'RahulGandhi', 'SSalud_mx', 'mansukhmandviya',
+       'narendramodi'],
+      dtype='object', name='poi_name')
+[{'poi_name': 'CDCDirector', 'count': -0.07503083333333334}, {'poi_name': 'CDCgov', 'count': -0.32273073170731703}, {'poi_name': 'DrTedros', 'count': -0.055021}, {'poi_name': 'HLGatell', 'count': -0.128875}, {'poi_name': 'JoeBiden', 'count': -0.46557}, {'poi_name': 'MoHFW_INDIA', 'count': -0.21408000000000002}, {'poi_name': 'RahulGandhi', 'count': -0.23391}, {'poi_name': 'SSalud_mx', 'count': -0.23843000000000006}, {'poi_name': 'mansukhmandviya', 'count': 0.14010833333333333}, {'poi_name': 'narendramodi', 'count': 0.11185500000000001}]
+vacuna
+http://3.17.16.7:8983/solr/Project4/select?q=tweet_text:*vacuna*&fl=*&wt=json&indent=true&rows=1000
+    country  ...                                           positive
+199  Mexico  ...                           Excelente DrGatelSaludos
+200  Mexico  ...  En el registro para vacunacin contra COVID19 p...
+201  Mexico  ...  Desde julio met aclaracin de correccin de cert...
+202  Mexico  ...  En Minatitln, Veracruz, los funcionarios elect...
+203  Mexico  ...  Definitivamente hay que darles importancia a e...
+204  Mexico  ...                        Pues que vacunen a los nios
+205  Mexico  ...  Perfecto y para cuando TODOS los menores de ed...
+206  Mexico  ...  Urge ampliar la vacunacin a menores de a aos, ...
+207  Mexico  ...                          Atte. El doctor muerte...
+208  Mexico  ...  Enhorabuena para Mxico La T sigue avanzando en...
+209  Mexico  ...  VACUNA PARA TODOS LOS NIOS Y ADOLESCENTES. ES ...
+210  Mexico  ...                 La cara del piloto al leer esto...
+211  Mexico  ...  Gracias Dr. Gatell, por su excelente Campaa de...
+212  Mexico  ...                                          Excelente
+213  Mexico  ...  Es muy importante qe te realices la prueba de ...
+214  Mexico  ...  te puse muchos tweets diciendote que hay que a...
+215  Mexico  ...                      Ya lleg el pago migratorio...
+
+[17 rows x 21 columns]
+Index(['HLGatell', 'SSalud_mx'], dtype='object', name='poi_name')
+[{'poi_name': 'HLGatell', 'count': -0.07856857142857142}, {'poi_name': 'SSalud_mx', 'count': -0.186279}]
+%E0%A4%95%E0%A5%8B%E0%A4%B0%E0%A5%8B%E0%A4%A8%E0%A4%BE
+http://3.17.16.7:8983/solr/Project4/select?q=tweet_text:*%E0%A4%95%E0%A5%8B%E0%A4%B0%E0%A5%8B%E0%A4%A8%E0%A4%BE*&fl=*&wt=json&indent=true&rows=1000
+%E0%A4%95%E0%A5%8B%E0%A4%B0%E0%A5%8B%E0%A4%A8%E0%A4%BE
+http://3.17.16.7:8983/solr/Project4/select?q=tweet_text:*%E0%A4%95%E0%A5%8B%E0%A4%B0%E0%A5%8B%E0%A4%A8%E0%A4%BE*&fl=*&wt=json&indent=true&rows=1000
+          poi_name  verified  ... replied_to_tweet_id replied_to_user_id
+0  mansukhmandviya      True  ...                   0                  0
+1  mansukhmandviya      True  ...                   0                  0
+
+[2 rows x 20 columns]
+Index(['mansukhmandviya'], dtype='object', name='poi_name')
+[{'poi_name': 'mansukhmandviya', 'count': 0.17451}]
+%E0%A4%95%E0%A5%8B%E0%A4%B0%E0%A5%8B%E0%A4%A8%E0%A4%BE
+http://3.17.16.7:8983/solr/Project4/select?q=tweet_text:*%E0%A4%95%E0%A5%8B%E0%A4%B0%E0%A5%8B%E0%A4%A8%E0%A4%BE*&fl=*&wt=json&indent=true&rows=1000
+en
+CDCDirector
+covid
+http://3.17.16.7:8983/solr/Project4/select?q=tweet_text:*covid*&fl=*&wt=json&indent=true&rows=1000
+en
+CDCDirector
+covid
+http://3.17.16.7:8983/solr/Project4/select?q=tweet_text:*covid*&fl=*&wt=json&indent=true&rows=1000
+en
+JoeBiden
+covid
+http://3.17.16.7:8983/solr/Project4/select?q=tweet_text:*covid*&fl=*&wt=json&indent=true&rows=1000
+en
+CDCDirector
+ * Restarting with stat
+[nltk_data] Downloading package stopwords to /home/ubuntu/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+ * Debugger is active!
+ * Debugger PIN: 119-182-537
+ * Detected change in '/home/ubuntu/project4/main.py', reloading
+ * Restarting with stat
+[nltk_data] Downloading package stopwords to /home/ubuntu/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+ * Debugger is active!
+ * Debugger PIN: 119-182-537
+ * Serving Flask app 'main' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+[nltk_data] Downloading package stopwords to /home/ubuntu/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.31.24.115:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+[nltk_data] Downloading package stopwords to /home/ubuntu/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+ * Debugger is active!
+ * Debugger PIN: 119-182-537
+74.77.118.22 - - [13/Dec/2021 02:08:21] "GET / HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 02:08:21] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:08:21] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:08:21] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:08:21] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:08:21] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:08:21] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:08:21] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:08:21] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:08:21] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:08:21] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:08:21] "GET /static/images/UB.png HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:08:22] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:08:22] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:08:26] "POST /search HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/flask/app.py", line 2091, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/flask/app.py", line 2076, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/ubuntu/project4/main.py", line 76, in search
+    solr_search(solr_query)
+  File "/home/ubuntu/project4/main.py", line 40, in solr_search
+    data = urllib.request.urlopen(inurl)
+  File "/usr/lib/python3.6/urllib/request.py", line 223, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.6/urllib/request.py", line 526, in open
+    response = self._open(req, data)
+  File "/usr/lib/python3.6/urllib/request.py", line 544, in _open
+    '_open', req)
+  File "/usr/lib/python3.6/urllib/request.py", line 504, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python3.6/urllib/request.py", line 1353, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "/usr/lib/python3.6/urllib/request.py", line 1293, in do_open
+    h = http_class(host, timeout=req.timeout, **http_conn_args)
+  File "/usr/lib/python3.6/http/client.py", line 865, in __init__
+    self._validate_host(self.host)
+  File "/usr/lib/python3.6/http/client.py", line 1234, in _validate_host
+    raise InvalidURL(f"URL can't contain control characters. {host!r} "
+http.client.InvalidURL: URL can't contain control characters. 'localhost ' (found at least ' ')
+ * Detected change in '/home/ubuntu/project4/main.py', reloading
+covid
+http://localhost :8983/solr/Project4/select?q=tweet_text:*covid*&fl=*&wt=json&indent=true&rows=1000
+ * Restarting with stat
+[nltk_data] Downloading package stopwords to /home/ubuntu/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+ * Debugger is active!
+ * Debugger PIN: 119-182-537
+104.28.133.61 - - [13/Dec/2021 02:10:38] "GET / HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:10:38] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:10:38] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:10:39] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:10:39] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:10:39] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:10:39] "GET /static/styles/assets/css/master.css HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:10:39] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:10:39] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:10:39] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:10:39] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:10:39] "GET /static/images/UB.png HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 02:10:40] "GET / HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:10:40] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:10:40] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 02:10:40] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:10:40] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:10:40] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:10:40] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:10:40] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:10:40] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:10:40] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:10:40] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:10:40] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:10:40] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:10:41] "GET /static/images/UB.png HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:10:41] "GET /favicon.ico HTTP/1.1" 404 -
+74.77.118.22 - - [13/Dec/2021 02:10:41] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:10:41] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:10:46] "POST /search HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:10:49] "POST /search HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:10:53] "POST /api/get-news-result HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 02:10:53] "POST /api/get-news-result HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:11:02] "POST /api/get-general-result HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 02:11:03] "POST /api/get-general-result HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:11:04] "GET /api/get-chart-result?searchkey=covid HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:11:04] "GET /api/get-chart-result1?searchkey=covid HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:11:04] "GET /api/get-chart-result2?searchkey=covid HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:11:07] "GET / HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:11:07] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:11:07] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:11:07] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:11:07] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:11:07] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:11:07] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:11:07] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:11:07] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:11:07] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:11:07] "GET /static/images/UB.png HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:11:07] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:11:07] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:11:07] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:11:10] "GET /api/get-chart-result?searchkey=covid HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 02:11:10] "GET /api/get-chart-result1?searchkey=covid HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 02:11:11] "GET /api/get-chart-result2?searchkey=covid HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:11:12] "POST /search HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 02:11:15] "POST /api/get-general-result HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:11:20] "POST /api/get-news-result HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:11:21] "POST /api/get-general-result HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:11:24] "GET /api/get-chart-result?searchkey=covid HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:11:24] "GET /api/get-chart-result1?searchkey=covid HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:11:24] "GET /api/get-chart-result2?searchkey=covid HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:11:25] "POST /api/get-general-result HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:11:26] "POST /api/get-news-result HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:11:29] "POST /api/get-news-result HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:11:29] "POST /api/get-general-result HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:11:35] "POST /api/get-general-result HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:11:36] "POST /api/get-news-result HTTP/1.1" 200 -
+ * Serving Flask app 'main' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+[nltk_data] Downloading package stopwords to /home/ubuntu/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.31.24.115:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+[nltk_data] Downloading package stopwords to /home/ubuntu/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+ * Debugger is active!
+ * Debugger PIN: 119-182-537
+104.28.133.61 - - [13/Dec/2021 02:13:30] "GET / HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:13:31] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:31] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:31] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:31] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:31] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:31] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:31] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:31] "GET /static/images/UB.png HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:31] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:31] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:31] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:31] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:31] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:13:32] "GET / HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 02:13:32] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:13:32] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:13:32] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:13:32] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:13:32] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:13:32] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:13:32] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:13:32] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:13:32] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:13:32] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:13:32] "GET /static/images/UB.png HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:13:33] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:13:33] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:35] "POST /search HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 02:13:37] "POST /search HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:13:37] "POST /api/get-news-result HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:13:39] "POST /api/get-general-result HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 02:13:40] "POST /api/get-general-result HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:13:42] "POST /api/get-news-result HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:13:46] "GET / HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:13:46] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:46] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:46] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:46] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:46] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:46] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:46] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:46] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:46] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:46] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:46] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:46] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:46] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:46] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:46] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:46] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:46] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:46] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:46] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:46] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:46] "GET /static/images/UB.png HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:46] "GET /static/images/UB.png HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:46] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:46] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:47] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:47] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:13:51] "POST /search HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:13:53] "POST /api/get-news-result HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 02:13:58] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:13:58] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:13:58] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:13:58] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:13:58] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:13:58] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:13:59] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:13:59] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+74.77.118.22 - - [13/Dec/2021 02:13:59] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js.map HTTP/1.1" 200 -
+74.77.118.22 - - [13/Dec/2021 02:13:59] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css.map HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:14:00] "GET / HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:14:00] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:00] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:00] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:00] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:00] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:00] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:00] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:00] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:00] "GET /static/images/UB.png HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:00] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:00] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:00] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:00] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:07] "POST /search HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:14:11] "POST /api/get-news-result HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:14:15] "GET / HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:14:16] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:16] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:16] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:16] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:16] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:16] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:16] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:16] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:16] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:16] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:16] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:16] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:16] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:16] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:16] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:16] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:16] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:16] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:16] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:16] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:16] "GET /static/images/UB.png HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:16] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:16] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:16] "GET /static/images/UB.png HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:16] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:16] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:14:55] "POST /search HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:14:57] "POST /api/get-news-result HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:15:09] "GET / HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:15:09] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:15:09] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:15:09] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:15:09] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:15:09] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:15:09] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:15:09] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:15:09] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:15:09] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:15:09] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:15:09] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:15:09] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:15:09] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:15:09] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:15:09] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:15:09] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:15:09] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:15:10] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:15:10] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:15:10] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:15:10] "GET /static/images/UB.png HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:15:10] "GET /static/images/UB.png HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:15:10] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:15:10] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:15:10] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:15:10] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 02:15:14] "POST /search HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:15:16] "POST /api/get-general-result HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:15:18] "GET /api/get-chart-result?searchkey=covid HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:15:18] "GET /api/get-chart-result1?searchkey=covid HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:15:18] "GET /api/get-chart-result2?searchkey=covid HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 02:15:19] "POST /api/get-general-result HTTP/1.1" 200 -
+ * Serving Flask app 'main' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+[nltk_data] Downloading package stopwords to /home/ubuntu/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+ * Running on http://172.31.24.115:5000/ (Press CTRL+C to quit)
+ * Restarting with stat
+[nltk_data] Downloading package stopwords to /home/ubuntu/nltk_data...
+[nltk_data]   Package stopwords is already up-to-date!
+ * Debugger is active!
+ * Debugger PIN: 119-182-537
+49.205.87.169 - - [13/Dec/2021 02:53:05] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff HTTP/1.1" 200 -
+49.205.87.169 - - [13/Dec/2021 02:53:07] "GET /favicon.ico HTTP/1.1" 404 -
+104.28.133.62 - - [13/Dec/2021 02:53:15] "GET / HTTP/1.1" 200 -
+104.28.133.62 - - [13/Dec/2021 02:53:15] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 02:53:15] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 02:53:15] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 02:53:15] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 02:53:15] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 02:53:15] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 02:53:15] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 02:53:15] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 02:53:15] "GET /static/images/UB.png HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 02:53:15] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 02:53:15] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 02:53:16] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 02:53:16] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 02:53:19] "GET / HTTP/1.1" 200 -
+104.28.133.62 - - [13/Dec/2021 02:53:19] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 02:53:19] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 02:53:19] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 02:53:19] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 02:53:19] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 02:53:19] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 02:53:19] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 02:53:19] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 02:53:19] "GET /static/images/UB.png HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 02:53:19] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 02:53:19] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 02:53:20] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 02:53:20] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 03:00:57] "GET / HTTP/1.1" 200 -
+104.28.133.62 - - [13/Dec/2021 03:00:57] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 03:00:57] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 03:00:57] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 03:00:57] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 03:00:57] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 03:00:57] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 03:00:58] "GET /static/images/UB.png HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 03:00:58] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 03:00:58] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 03:00:58] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 03:00:58] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 03:00:58] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+104.28.133.62 - - [13/Dec/2021 03:00:58] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+49.205.87.169 - - [13/Dec/2021 03:08:32] "GET / HTTP/1.1" 200 -
+49.205.87.169 - - [13/Dec/2021 03:08:32] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+49.205.87.169 - - [13/Dec/2021 03:08:33] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+49.205.87.169 - - [13/Dec/2021 03:08:33] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+49.205.87.169 - - [13/Dec/2021 03:08:33] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+49.205.87.169 - - [13/Dec/2021 03:08:33] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+49.205.87.169 - - [13/Dec/2021 03:08:33] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+49.205.87.169 - - [13/Dec/2021 03:08:33] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+49.205.87.169 - - [13/Dec/2021 03:08:33] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+49.205.87.169 - - [13/Dec/2021 03:08:33] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+49.205.87.169 - - [13/Dec/2021 03:08:33] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+49.205.87.169 - - [13/Dec/2021 03:08:33] "GET /static/images/UB.png HTTP/1.1" 200 -
+49.205.87.169 - - [13/Dec/2021 03:08:34] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 200 -
+49.205.87.169 - - [13/Dec/2021 03:08:34] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+49.205.87.169 - - [13/Dec/2021 03:08:44] "POST /search HTTP/1.1" 200 -
+49.205.87.169 - - [13/Dec/2021 03:09:05] "POST /api/get-news-result HTTP/1.1" 200 -
+172.101.101.17 - - [13/Dec/2021 03:09:10] "GET / HTTP/1.1" 200 -
+172.101.101.17 - - [13/Dec/2021 03:09:10] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 200 -
+172.101.101.17 - - [13/Dec/2021 03:09:10] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 200 -
+172.101.101.17 - - [13/Dec/2021 03:09:10] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 200 -
+172.101.101.17 - - [13/Dec/2021 03:09:10] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 200 -
+172.101.101.17 - - [13/Dec/2021 03:09:10] "GET /static/styles/assets/css/master.css HTTP/1.1" 200 -
+172.101.101.17 - - [13/Dec/2021 03:09:10] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 200 -
+172.101.101.17 - - [13/Dec/2021 03:09:10] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 200 -
+172.101.101.17 - - [13/Dec/2021 03:09:10] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 200 -
+172.101.101.17 - - [13/Dec/2021 03:09:10] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 200 -
+172.101.101.17 - - [13/Dec/2021 03:09:10] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 200 -
+172.101.101.17 - - [13/Dec/2021 03:09:10] "GET /static/images/UB.png HTTP/1.1" 200 -
+172.101.101.17 - - [13/Dec/2021 03:09:11] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 200 -
+172.101.101.17 - - [13/Dec/2021 03:09:11] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 -
+172.101.101.17 - - [13/Dec/2021 03:09:11] "GET /favicon.ico HTTP/1.1" 404 -
+49.205.87.169 - - [13/Dec/2021 03:09:18] "POST /api/get-general-result HTTP/1.1" 200 -
+49.205.87.169 - - [13/Dec/2021 03:09:27] "GET /api/get-chart-result?searchkey=modi HTTP/1.1" 200 -
+49.205.87.169 - - [13/Dec/2021 03:09:27] "GET /api/get-chart-result1?searchkey=modi HTTP/1.1" 200 -
+49.205.87.169 - - [13/Dec/2021 03:09:27] "GET /api/get-chart-result2?searchkey=modi HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 03:14:52] "GET / HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 03:14:52] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:52] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:52] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:52] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:52] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:52] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:52] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:52] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:52] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:52] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:52] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:52] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:52] "GET /static/images/UB.png HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:54] "POST /search HTTP/1.1" 500 -
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/flask/app.py", line 2091, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/flask/app.py", line 2076, in wsgi_app
+    response = self.handle_exception(e)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/flask/app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/flask/app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/flask/app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/ubuntu/project4/main.py", line 70, in search
+    user_query = input_data['basic']
+KeyError: 'basic'
+104.28.133.61 - - [13/Dec/2021 03:14:58] "GET / HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 03:14:58] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:58] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:58] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:58] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:58] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:58] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:59] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:59] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:59] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:59] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:59] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:59] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:59] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:59] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:59] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:59] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:59] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:59] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:59] "GET /static/images/UB.png HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:59] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:59] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:59] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:59] "GET /static/images/UB.png HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:59] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:59] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:14:59] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:15:03] "POST /search HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 03:15:07] "GET / HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 03:15:07] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:15:07] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:15:07] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:15:07] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:15:07] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:15:07] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:15:07] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:15:07] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:15:07] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:15:07] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:15:07] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:15:07] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:15:07] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:15:08] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:15:08] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:15:08] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:15:08] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:15:08] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:15:08] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:15:08] "GET /static/images/UB.png HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:15:08] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:15:08] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:15:08] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:15:08] "GET /static/images/UB.png HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:15:08] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:15:08] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:15:14] "POST /search HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 03:15:52] "POST /api/get-news-result HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 03:15:55] "POST /api/get-general-result HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 03:15:58] "GET /api/get-chart-result?searchkey=pandemic HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 03:15:58] "GET /api/get-chart-result1?searchkey=pandemic HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 03:15:58] "GET /api/get-chart-result2?searchkey=pandemic HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 03:16:05] "GET / HTTP/1.1" 200 -
+104.28.133.61 - - [13/Dec/2021 03:16:05] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:16:05] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:16:05] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:16:05] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:16:05] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:16:05] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:16:05] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:16:05] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:16:05] "GET /static/styles/assets/vendor/fontawesome/css/fontawesome.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:16:05] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:16:05] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:16:05] "GET /static/styles/assets/vendor/fontawesome/css/brands.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:16:05] "GET /static/styles/assets/vendor/bootstrap/css/bootstrap.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:16:05] "GET /static/styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:16:05] "GET /static/styles/assets/css/master.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:16:05] "GET /static/styles/assets/vendor/fontawesome/css/solid.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:16:05] "GET /static/styles/assets/vendor/datatables/datatables.min.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:16:05] "GET /static/styles/assets/vendor/datatables/datatables.min.js HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:16:05] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:16:05] "GET /static/styles/assets/components/sidebar/sidebar-default.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:16:05] "GET /static/styles/assets/components/navbar/navbar-dropdowns.css HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:16:05] "GET /static/images/UB.png HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:16:05] "GET /static/images/UB.png HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:16:05] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:16:06] "GET /static/styles/assets/font/Lato-Regular.woff HTTP/1.1" 304 -
+104.28.133.61 - - [13/Dec/2021 03:16:06] "GET /static/styles/assets/vendor/fontawesome/webfonts/fa-solid-900.woff2 HTTP/1.1" 304 -

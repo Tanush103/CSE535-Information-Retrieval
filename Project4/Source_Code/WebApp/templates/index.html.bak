@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+<!-- "{{ url_for('static',filename='styles/assets/vendor/bootstrap/css/fontawesome.min.css') }}"
+      -->
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Project 4 | Information Retrieval</title>
+   <link href="{{ url_for('static',filename='styles/assets/vendor/fontawesome/css/fontawesome.min.css') }}"
+      rel="stylesheet">
+   <link href="{{ url_for('static',filename='styles/assets/vendor/fontawesome/css/solid.min.css') }}" rel="stylesheet">
+   <link href="{{ url_for('static',filename='styles/assets/vendor/fontawesome/css/brands.min.css') }}" rel="stylesheet">
+   <link href="{{ url_for('static',filename='styles/assets/vendor/bootstrap/css/bootstrap.min.css') }}"
+      rel="stylesheet">
+   <link href="{{ url_for('static',filename='styles/assets/css/master.css') }}" rel="stylesheet">
+   <link href="{{ url_for('static',filename='styles/assets/vendor/datatables/datatables.min.css') }}" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/21.2.3/css/dx.common.css" />
+   <link rel="stylesheet" type="text/css" href="https://cdn3.devexpress.com/jslib/21.2.3/css/dx.light.css" />
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+   <script src="{{ url_for('static',filename='styles/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="{{ url_for('static',filename='styles/assets/vendor/datatables/datatables.min.js') }}"></script>
+   <script src="https://cdn3.devexpress.com/jslib/21.2.3/js/dx.all.js"></script>
+</head>
+
+<body>
+   <script>
+      // Initiate datatables in roles, tables, users page
+      var searchdataTables
+      var newsdataTables
+
+      function InitDataTable() {
+         if (searchdataTables != null || searchdataTables != undefined)
+            searchdataTables.destroy();
+
+
+         searchdataTables = $('#searchdataTables').DataTable({
+            responsive: true,
+            pageLength: 10,
+            searching: true,
+            ordering: true
+         });
+
+         $("#graphResult").removeClass("active");
+         $("#graphResult").removeClass("show");
+
+
+      }
+
+      function InitNewsDataTable() {
+         if (newsdataTables != null || newsdataTables != undefined)
+            newsdataTables.destroy();
+
+
+
+         newsdataTables = $('#newsdataTables').DataTable({
+            responsive: true,
+            pageLength: 10,
+            searching: true,
+            ordering: true
+         });
+      }
+
+   </script>
+   <script type="text/javascript">
+      var app = angular.module('serachApp', ['dx'])
+
+      app.controller('SearchController', function ($scope, $http) {
+
+         $scope.IsTableVisible = false;
+         $scope.IsSearchVisible = true;
+         $scope.IsSearchTabVisible = true;
+         $scope.IsAdSearchTabVisible = false;
+
+
+         $scope.ShowHideTable = function () {
+            $scope.IsTableVisible = $scope.IsTableVisible ? false : true;
+            $scope.IsSearchVisible = $scope.IsSearchVisible ? false : true;
+         }
+
+         $scope.TabClick = function (btnid) {
+            if (btnid == 1) {
+               $scope.search = "";
+               $scope.IsSearchTabVisible = true;
+               $scope.IsAdSearchTabVisible = false;
+            }
+            if (btnid == 2) {
+               $scope.adsearch = "";
+               $scope.languageselected = $scope.arrlang[0];
+               $scope.arrpoi = [{ "id": 0, "name": "Choose.." }];
+               $scope.poiselected = $scope.arrpoi[0];
+               $scope.IsSearchTabVisible = false;
+               $scope.IsAdSearchTabVisible = true;
+            }
+         }
+
+         $scope.languageupdate = function () {
+            if ($scope.languageselected.id == 1) {
+               //         $scope.getByID = function() {
+               //          var url = "" + $scope.formData.searchText;
+               //          var params = { app_id: id };
+               //          var config = { params: params };
+               //          $http.get(url, config)
+               //          .then(response => {
+               //              console.log(response.data.name)
+               //              $scope.data = response.data;
+               //          })   
+               //      }
+               $scope.arrpoi = [{ "id": 0, "name": "Choose.." }, { "id": 1, "name": "lopezobrador_" }, { "id": 2, "name": "SSalud_mx" }, { "id": 3, "name": "HLGatell" }, { "id": 4, "name": "julio_frenk" }, { "id": 5, "name": "RicardoAnayaC" }, { "id": 6, "name": "JoeBiden" }, { "id": 7, "name": "XavierBecerra" }, { "id": 8, "name": "DrTedros" }, { "id": 9, "name": "CDCDirector" }, { "id": 10, "name": "CDCgov" }, { "id": 11, "name": "narendramodi" }, { "id": 12, "name": "RahulGandhi" }, { "id": 13, "name": "AmitShah" }, { "id": 14, "name": "mansukhmandviya" }, { "id": 15, "name": "MoHFW_INDIA" }];
+               $scope.poiselected = $scope.arrpoi[0];
+            }
+            if ($scope.languageselected.id == 2) {
+               $scope.arrpoi = [{ "id": 0, "name": "Choose.." }, { "id": 1, "name": "lopezobrador_" }, { "id": 2, "name": "SSalud_mx" }, { "id": 3, "name": "HLGatell" }, { "id": 4, "name": "julio_frenk" }, { "id": 5, "name": "RicardoAnayaC" }, { "id": 6, "name": "JoeBiden" }, { "id": 7, "name": "XavierBecerra" }, { "id": 8, "name": "DrTedros" }, { "id": 9, "name": "CDCDirector" }, { "id": 10, "name": "CDCgov" }, { "id": 11, "name": "narendramodi" }, { "id": 12, "name": "RahulGandhi" }, { "id": 13, "name": "AmitShah" }, { "id": 14, "name": "mansukhmandviya" }, { "id": 15, "name": "MoHFW_INDIA" }];
+               $scope.poiselected = $scope.arrpoi[0];
+            }
+            if ($scope.languageselected.id == 3) {
+               $scope.arrpoi = [{ "id": 0, "name": "Choose.." }, { "id": 1, "name": "lopezobrador_" }, { "id": 2, "name": "SSalud_mx" }, { "id": 3, "name": "HLGatell" }, { "id": 4, "name": "julio_frenk" }, { "id": 5, "name": "RicardoAnayaC" }, { "id": 6, "name": "JoeBiden" }, { "id": 7, "name": "XavierBecerra" }, { "id": 8, "name": "DrTedros" }, { "id": 9, "name": "CDCDirector" }, { "id": 10, "name": "CDCgov" }, { "id": 11, "name": "narendramodi" }, { "id": 12, "name": "RahulGandhi" }, { "id": 13, "name": "AmitShah" }, { "id": 14, "name": "mansukhmandviya" }, { "id": 15, "name": "MoHFW_INDIA" }];
+               $scope.poiselected = $scope.arrpoi[0];
+            }
+            if ($scope.languageselected.id == 0) {
+               $scope.arrpoi = [{ "id": 0, "name": "Choose.." }];
+               $scope.poiselected = $scope.arrpoi[0];
+            }
+         }
+
+         $scope.arrlang = [{ "id": 0, "name": "Choose.." }, { "id": 1, "name": "English" }, { "id": 2, "name": "Hindi" }, { "id": 3, "name": "Spanish" }];
+         $scope.languageselected = $scope.arrlang[0];
+
+         $scope.arrpoi = [{ "id": 0, "name": "Choose.." }];
+         $scope.poiselected = $scope.arrpoi[0];
+
+         $scope.arrsearchresult = []
+
+         $scope.SearchAPI = function (btnid) {
+
+            $scope.val = btnid;
+            var data = {
+               name: 'sample check'
+            }
+            var newsdata = {
+               name: 'sample check'
+            }
+            var req = {
+               method: 'POST',
+               url: '/search',
+               data: {
+                  'val': $scope.val,
+                  'basic': $scope.search,
+                  'adsearch': $scope.adsearch,
+                  'languageselected': $scope.languageselected,
+                  'poiselected': $scope.poiselected
+               }
+            }
+            // $http.post("/api/get-search-result?searchkey="+$scope.search)
+            $http(req)
+               // $http.post('/api/get-search-result', JSON.stringify(data))
+               .then(function (response) {
+                  //  console.log(response);
+                  // $scope.arrsearchresult = response.data.queryresult;
+                  $scope.data = response.data.queryresult;
+                  // console.log(response.data.queryresult);
+                  //  console.log($scope.arrsearchresult[0]);
+                  console.log(response.data.queryresult);
+
+                  angular.element(document).ready(function () {
+                     InitDataTable();
+                  });
+               });
+
+            req = {
+               method: 'POST',
+               url: '/api/get-news-result',
+               data: {
+                  'val': $scope.val,
+                  'basic': $scope.search,
+                  'adsearch': $scope.adsearch,
+                  'languageselected': $scope.languageselected,
+                  'poiselected': $scope.poiselected
+               }
+            }
+            $http(req)
+               // $http.post('/api/get-search-result', JSON.stringify(data))
+               .then(function (response) {
+                  //  console.log(response);
+                  // $scope.arrsearchresult = response.data.queryresult;
+                  $scope.newsdata = response.data.queryresult;
+                  // console.log(response.data.queryresult);
+                  //  console.log($scope.arrsearchresult[0]);
+                  console.log(response.data.queryresult);
+
+                  angular.element(document).ready(function () {
+                     InitNewsDataTable();
+                  });
+               });
+
+            $scope.chartOptions = {
+               palette: 'violet',
+               dataSource: "/api/get-chart-result?searchkey=" + $scope.search,
+               series: {
+                  argumentField: 'poi_name',
+                  valueField: 'count',
+                  type: 'bar',
+                  color: 'black',
+                  name: 'Point of Interest'
+               },
+               title: {
+                  text: 'Sentiment Analysis',
+               },
+               export: {
+                  enabled: true,
+               },
+               legend: {
+                  verticalAlignment: 'right',
+                  horizontalAlignment: 'center',
+               }
+            };
+
+            $scope.chartOptions1 = {
+               palette: 'violet',
+               dataSource: "/api/get-chart-result1?searchkey=" + $scope.search,
+               series: {
+                  argumentField: 'language',
+                  valueField: 'count',
+                  type: 'bar',
+                  color: '#ffaa66',
+                  name: 'language'
+               },
+               title: {
+                  text: 'Bi-Language',
+               },
+               export: {
+                  enabled: true,
+               },
+               legend: {
+                  verticalAlignment: 'right',
+                  horizontalAlignment: 'center',
+               }
+            };
+
+            $scope.chartOptions2 = {
+               palette: 'violet',
+               dataSource: "/api/get-chart-result2?searchkey=" + $scope.search,
+               series: {
+                  argumentField: 'country',
+                  valueField: 'count',
+                  type: 'bar',
+                  color: '#ffaa66',
+                  name: 'country'
+               },
+               title: {
+                  text: 'Country',
+               },
+               export: {
+                  enabled: true,
+               },
+               legend: {
+                  verticalAlignment: 'bottom',
+                  horizontalAlignment: 'center',
+               }
+            };
+
+         }
+
+      });
+   </script>
+   <div class="wrapper" ng-app="serachApp" ng-controller="SearchController">
+      <div id="body" class="active">
+         <div class="content">
+            <div class="container">
+               <div class="page-title">
+                  <br><a href="/"><img align="left" width="15%" height="7.5%" src=" static/images/UB.png" /><a>
+                        <h1 align="center">Deep Mined Search Engine </h1><br>
+               </div>
+               <div class="row">
+                  <div ng-show="IsSearchVisible" id="serachdiv" class="col-lg-12">
+                     <div class="card">
+                        <div class="card-body">
+                           <ul class="nav nav-tabs" id="myTab" role="tablist">
+                              <li class="nav-item">
+                                 <a class="nav-link active" ng-click="TabClick(1)" id="home-tab" data-bs-toggle="tab"
+                                    href="#search" role="tab" aria-controls="search" aria-selected="true">Search</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" ng-click="TabClick(2)" id="advancesearch-tab" data-bs-toggle="tab"
+                                    href="#advancesearch" role="tab" aria-controls="advancesearch"
+                                    aria-selected="false">Advance Search</a>
+                              </li>
+                           </ul>
+                           <div class="tab-content" id="myTabContent">
+                              <div class="tab-pane fade  active show" id="search" role="tabpanel"
+                                 aria-labelledby="search-tab">
+                                 <form name="searchform" accept-charset="utf-8">
+                                    <div class="mb-3">
+                                       <input ng-required="true" type="serach" name="search" ng-model="search"
+                                          placeholder="Search" class="form-control">
+                                    </div>
+                                    <div class="mb-3">
+                                       <button ng-click="SearchAPI(1);ShowHideTable(1)" type="button"
+                                          class="btn btn-primary"><i class="fas fa-search"></i> Search</button>
+                                    </div>
+                                 </form>
+                              </div>
+                              <div class="tab-pane fade" id="advancesearch" role="tabpanel"
+                                 aria-labelledby="advancesearch-tab">
+                                 <form accept-charset="utf-8">
+                                    <div class="row g-2">
+                                       <div class="mb-3 col-md-4">
+                                          <label for="adserach" class="form-label">Search</label>
+                                          <input type="text" class="form-control" ng-model="adsearch" name="adserach"
+                                             placeholder="Search">
+                                       </div>
+                                       <div class="mb-3 col-md-4">
+                                          <label for="language" class="form-label">Language</label>
+                                          <select ng-change="languageupdate();" class="form-select" name="language"
+                                             ng-options="language.name for language in arrlang"
+                                             ng-model="languageselected">
+                                          </select>
+                                       </div>
+                                       <div class="mb-3 col-md-4">
+                                          <label for="poi" class="form-label">Person of Interest</label>
+                                          <select class="form-select" name="poi" ng-options="poi.name for poi in arrpoi"
+                                             ng-model="poiselected">
+                                          </select>
+                                       </div>
+                                    </div>
+                                    <div class="mb-3">
+                                       <button ng-click="SearchAPI(2);ShowHideTable(2)" type="button"
+                                          class="btn btn-primary"><i class="fas fa-search"></i> Search</button>
+                                    </div>
+                                 </form>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="tablediv" class="col-lg-12" ng-show="IsTableVisible">
+                     <div class="card">
+                        <div class="card-body">
+                           <form accept-charset="utf-8">
+                              <div class="row g-2">
+                                 <div class="mb-3 col-md-2">
+                                    <button type="button" ng-click="ShowHideTable()"
+                                       class="btn btn-primary">Back</button>
+                                 </div>
+                                 <div ng-show="IsSearchTabVisible" class="mb-3 col-md-8">
+                                    <b>Search Text: </b> {{ '{{ search }}' }} </h6>
+                                 </div>
+                                 <div ng-show="IsAdSearchTabVisible" class="mb-3 col-md-8">
+                                    <b>Search Text:</b> {{ '{{ adsearch }}' }} <b>Language:</b> {{ '{{
+                                    languageselected.name }}' }} <b>Person of Interest:</b> {{ '{{
+                                    poiselected.name }}' }}
+                                 </div>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                     <div class="col-md-12 col-lg-12">
+                        <div class="col-md-12">
+                           <div class="row">
+                              <div class="col-md-12">
+                                 <div class="card">
+                                    <ul class="nav nav-tabs" id="searchResultTab" role="tablist">
+                                       <li class="nav-item">
+                                          <a class="nav-link active" id="sr-tab" data-bs-toggle="tab"
+                                             href="#searchResult" role="tab" aria-controls="searchResult"
+                                             aria-selected="true">Search Result</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" id="news-tab" data-bs-toggle="tab" href="#newsResult"
+                                             role="tab" aria-controls="newsResult" aria-selected="false">News</a>
+                                       </li>
+                                       <li class="nav-item">
+                                          <a class="nav-link" id="graph-tab" data-bs-toggle="tab" href="#graphResult"
+                                             role="tab" aria-controls="graphResult" aria-selected="false">Graph</a>
+                                       </li>
+                                    </ul>
+                                    <div class="tab-content" id="searchResultTabContent">
+                                       <div class="tab-pane fade  active show" id="searchResult" role="tabpanel"
+                                          aria-labelledby="sr-tab">
+                                          <table class="table table-hover" id="searchdataTables" width="100%">
+                                             <thead>
+                                                <tr>
+                                                   <th>Queried Results</th>
+                                                </tr>
+                                             </thead>
+                                             <tbody>
+                                                <tr ng-repeat="x in data">
+                                                   <td>
+                                                      <table>
+                                                         <tr ng-show="x.poi_name!= 'NaN'">
+                                                            <th>POI Name</th>
+                                                            <td>&nbsp;&nbsp;{{'{{ x.poi_name }}'}}</td>
+                                                         </tr>
+                                                         <tr ng-show="x.country!= 'NaN'">
+                                                            <th>Country</th>
+                                                            <td>&nbsp;&nbsp;{{'{{ x.country }}'}}</td>
+                                                         </tr>
+                                                         <tr ng-show="x.tweet_text!= 'NaN'">
+                                                            <th>Tweet</th>
+                                                            <td>&nbsp;&nbsp;{{'{{ x.tweet_text }}'}}</td>
+                                                         </tr>
+                                                         <tr ng-show="x.tweet_lang!= 'NaN'">
+                                                            <th>Tweet Language</th>
+                                                            <td>&nbsp;&nbsp;{{'{{ x.tweet_lang }}'}}</td>
+                                                         </tr>
+                                                         <tr ng-show="x.tweet_urls.indexOf('NaN') == -1">
+                                                            <th>URL</th>
+                                                            <td>&nbsp;&nbsp;{{'{{ x.tweet_urls }}'}}</td>
+                                                         </tr>
+                                                         <tr ng-show="x.tweet_date!= 'NaN'">
+                                                            <th>Date</th>
+                                                            <td>&nbsp;&nbsp;{{'{{ x.tweet_date }}'}}</td>
+                                                         </tr>
+                                                         <tr ng-show="x.hashtags.indexOf('NaN') == -1">
+                                                            <th>Hashtags</th>
+                                                            <td>&nbsp;&nbsp;{{'{{ x.hashtags }}'}}</td>
+                                                         </tr>
+                                                      </table>
+                                                   </td>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                       <div class="tab-pane fade" id="newsResult" role="tabpanel"
+                                          aria-labelledby="news-tab">
+                                          <table class="table table-hover" id="newsdataTables" width="100%">
+                                             <thead>
+                                                <tr>
+                                                   <th>News</th>
+                                                </tr>
+                                             </thead>
+                                             <tbody>
+                                                <tr ng-repeat="x in newsdata">
+                                                   <td>
+                                                      <table>
+                                                         <tr ng-show="x.poi_name!= 'NaN'">
+                                                            <th valign="top" nowrap>POI Name</th>
+                                                            <td>&nbsp;&nbsp;{{'{{ x.poi_name }}'}}</td>
+                                                         </tr>
+                                                         <tr ng-show="x.country!= 'NaN'">
+                                                            <th valign="top" nowrap>Country</th>
+                                                            <td>&nbsp;&nbsp;{{'{{ x.country }}'}}</td>
+                                                         </tr>
+                                                         <tr ng-show="x.tweet_text!= 'NaN'">
+                                                            <th valign="top" nowrap>Tweet Text</th>
+                                                            <td align="left">&nbsp;&nbsp;{{'{{ x.tweet_text }}'}}</td>
+                                                         </tr>
+                                                         <tr ng-show="x.tweet_lang!= 'NaN'">
+                                                            <th valign="top" nowrap>Tweet Language</th>
+                                                            <td>&nbsp;&nbsp;{{'{{ x.tweet_lang }}'}}</td>
+                                                         </tr>
+                                                         <tr ng-show="x.tweet_urls.indexOf('NaN') == -1">
+                                                            <th valign="top" nowrap>URL</th>
+                                                            <td>&nbsp;&nbsp;{{'{{ x.tweet_urls }}'}}</td>
+                                                         </tr>
+                                                         <tr ng-show="x.tweet_date!= 'NaN'">
+                                                            <th valign="top" nowrap>Date</th>
+                                                            <td>&nbsp;&nbsp;{{'{{ x.tweet_date }}'}}</td>
+                                                         </tr>
+                                                         <tr ng-show="x.hashtags.indexOf('NaN') == -1">
+                                                            <th valign="top" nowrap>Hashtags</th>
+                                                            <td>&nbsp;&nbsp;{{'{{ x.hashtags }}'}}</td>
+                                                         </tr>
+                                                      </table>
+                                                   </td>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                       <div class="tab-pane fade   active show" id="graphResult" role="tabpanel"
+                                          aria-labelledby="graph-tab">
+                                          <div class="col-md-12">
+                                             <div class="demo-container">
+                                                <div id="chart1" dx-chart="chartOptions"></div>
+                                             </div>
+                                             <div class="demo-container">
+                                                <div id="chart2" dx-chart="chartOptions1"></div>
+                                             </div>
+                                             <div class="demo-container">
+                                                <div id="chart3" dx-chart="chartOptions2"></div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+</body>
+
+</html>
